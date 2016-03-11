@@ -33,6 +33,9 @@ gem 'sdoc', '0.4.0', group: :doc
 # Use figaro for hiding API keys and login credentials
 gem 'figaro'
 
+# Use FontAwesome for icons
+gem 'font-awesome-sass', '4.5.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
