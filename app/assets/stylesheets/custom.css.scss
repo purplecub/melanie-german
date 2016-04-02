@@ -3,3 +3,25 @@
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+body {
+    background: black;
+}
+
+.jumbotron-custom {
+    background: transparent;
+    color: white;
+}
+
+.navbar-static-top {
+    background: rgba(0,0,0,0); //Makes background color transparent. Last number between 0 and 1.
+    border-bottom-width: 0px;
+}
+
+.navbar .nav > li > a {
+    color: #ea0040;
+}
+
+.navbar .navbar-inner .container {
+    color: #ea0040;
+}
