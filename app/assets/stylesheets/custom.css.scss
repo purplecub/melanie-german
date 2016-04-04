@@ -18,10 +18,15 @@ body {
     border-bottom-width: 0px;
 }
 
-.navbar .nav > li > a {
+.navbar .container .navbar-header a, .navbar .nav li a { //changes left and right side of navbar, respectively
     color: #ea0040;
 }
+.navbar .container .navbar-header a:hover, .navbar .nav li a:hover {
+    color: white;
+}
 
-.navbar .navbar-inner .container {
-    color: #ea0040;
+.m-logo {
+    height: 20px;
+    float: left;
+    margin-right: 14px;
 }
