@@ -5,7 +5,7 @@
 @import "font-awesome";
 
 body {
-    background: black;
+    padding-top: 65px;
 }
 
 .jumbotron-custom {
@@ -41,4 +41,8 @@ background: linear-gradient(to left, #434343 , #FFFFFF); /* W3C, IE 10+/ Edge, F
 
 .jumbotron .hello {
     color: #ea0040;
+}
+
+#page1, #page2, #page3, #page4 {
+    height: 1000px;
 }
