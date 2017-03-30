@@ -12,3 +12,17 @@
     text-decoration: none;
     color: #ea0040;
 }
+
+
+
+.left-item .experience-circle {
+    position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 5px solid #407495;
+  border-radius: 25px;
+  left: -21px;
+  text-align: right;
+  top: 53px;
+  z-index: 3;
+}
