@@ -1,28 +1,11 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To do:
+look up how to put contact form on single page view
+Look up how to make full screen scetions on single page view
+Add about me picture
+find picture for about me section
+find home page header picture
+find picture for contact form background
+Fix whatever's going on with About being merged into contacts
+Add div with full page background color for experience page
