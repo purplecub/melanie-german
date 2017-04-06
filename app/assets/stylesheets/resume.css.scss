@@ -1,3 +1,8 @@
+/* #page3 {
+    background-color: #FAEFED;
+}
+*/ 
+
 .job .row .col-md-4 img {
     height: 140px;
     border-radius: 6%;
@@ -13,16 +18,74 @@
     color: #ea0040;
 }
 
-
+.right-item .experience-circle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 5px solid #407495;
+    border-radius: 25px;
+    left: -15px;
+    text-align: center;
+    top: 18px;
+    z-index: 3;
+}
 
 .left-item .experience-circle {
     position: absolute;
-  width: 18px;
-  height: 18px;
-  border: 5px solid #407495;
-  border-radius: 25px;
-  left: -21px;
-  text-align: right;
-  top: 53px;
-  z-index: 3;
+    width: 18px;
+    height: 18px;
+    border-radius: 25px;
+    right: -2px;
+    text-align: center;
+    top: 26px;
+    z-index: 3;
+    border: 5px solid #818181;
 }
+
+.left-item::after {
+  content: "";
+  width: 4px;
+  position: absolute;
+  top: 45px;
+  bottom: -25px;
+  right: 5px;
+  background: none repeat scroll 0% 0% #ddd;
+  z-index: 2;
+}
+
+.right-item::after {
+  content: "";
+  width: 4px;
+  position: absolute;
+  top: 30px;
+  bottom: -25px;
+  left: -9px;
+  background: none repeat scroll 0% 0% #dedbdb;
+  z-index: 2;
+}
+
+
+.experience-box {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 25px;
+    padding: 15px;
+}
+
+/* #triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+	float: right;
+}
+
+#triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+*/
