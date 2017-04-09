@@ -6,7 +6,7 @@
 
 body {
     background-color: #FAEFED;
-    padding-top: 65px;
+    margin-top: 65px;
 }
 
 .jumbotron-custom {
@@ -46,4 +46,8 @@ background: linear-gradient(to left, #434343 , #FFFFFF); /* W3C, IE 10+/ Edge, F
 
 #page1, #page2, #page3, #page4 {
     height: 1000px;
+}
+
+.spacer {
+    margin-top: 65px;
 }
