@@ -237,18 +237,29 @@
                     <div class="col-md-offset-2 col-md-8">
                         <div class="col-md-12">
                             <div class="contact-form"><form class="contact-form-area">
+                                <%= form_for @contact do |f| %>
                                         <div class="col-md-6">
-                                            <input type="text" placeholder="Name" id="name">
+                                            <!-- <input type="text" placeholder="Name" id="name"> -->
+                                            <% f.label :name %>
+                                            <%= f.text_field :name, placeholder: "Name" %>
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" placeholder="Email" id="email">
+                                            <!-- <input type="text" placeholder="Email" id="email"> -->
+                                            <% f.label :email %>
+                                            <%= f.email_field :email, placeholder: "Email" %>
                                         </div>
                                         <div class="col-md-12">
-                                            <textarea placeholder="Type here" id="message"></textarea>
-                                            <input type="submit" class="submit-btn btn-style2 clearfix" value="SUBMIT" id="contact-submit">
+                                            <!-- <textarea placeholder="Type here" id="message"></textarea>
+                                            <input type="submit" class="submit-btn btn-style2 clearfix" value="SUBMIT" id="contact-submit"> -->
+                                            <% f.label :message %>
+                                            <%= f.text_area :message, placeholder: "Type your message here." %>
+                                            
+                                            <%= f.submit "SUBMIT", class: "submit-btn btn-style2 clearfix", id: "contact-submit" %>
                                         </div>
+                                        <% end %>
                                     </form>
                                     <div class="result"></div>
+                                 
                             </div>
                         </div>
                     </div>

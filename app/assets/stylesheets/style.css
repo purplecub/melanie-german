@@ -137,6 +137,7 @@ header nav ul li a:active::after {
 header nav ul li .experience {
   margin-left: 15px;
   margin-right: 25px;
+  background-color: white;
 }
 
 
