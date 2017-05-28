@@ -36,6 +36,11 @@ gem 'figaro'
 # Use FontAwesome for icons
 gem 'font-awesome-sass', '4.5.0'
 
+# Use particles.js for particle header
+source 'https://rails-assets.org' do
+  gem 'rails-assets-particles.js'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
