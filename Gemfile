@@ -41,6 +41,9 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-particles.js'
 end
 
+# Use typed.js for typing effect in header
+gem "typedjs-rails", '1.0.4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

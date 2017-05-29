@@ -134,7 +134,7 @@ header nav ul li a:active::after {
   background-color: #fff;
 }
 
-header nav ul li .experience {
+header nav ul li .experience-navbar {
   margin-left: 15px;
   margin-right: 25px;
   background-color: white;
@@ -595,9 +595,9 @@ canvas {
 
 /*---------------------experience section---------------------*/
 
-.experience {
-  background: url("../images/experience-bg.jpg");
-}
+/* .experience {
+    background: url("../images/experience-bg.jpg"); 
+} */
 
 .experience-header {
   margin-bottom: 20px;
