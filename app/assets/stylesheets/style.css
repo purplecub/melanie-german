@@ -85,6 +85,13 @@ header a .logo {
   float: left;
 }
 
+.header-name {
+  font-size: 15px;
+  display: inline-block;
+  color: black;
+  font-weight: 600;
+}
+
 header nav {
   float: right;
 }
@@ -152,12 +159,13 @@ canvas {
 .particle-bg{
   position: relative;
   background-size: cover;
-  background: url("../images/particle-bg.jpg");
+  background: url("../images/background-header.jpg");
+  
 }
 
 .image-bg{
   background-size: cover;
-  background: url("../images/img-bg.jpg");
+  background: url("../images/keyboard.jpeg");
 }
 
 .image-bg.welcome-area{
@@ -734,7 +742,7 @@ canvas {
 /*------------------contact section-------------*/
 
 .contact {
-  background: url("../images/contact.jpg");
+  background: url("../images/background-contact.jpg");
   background-size: cover;
 }
 
