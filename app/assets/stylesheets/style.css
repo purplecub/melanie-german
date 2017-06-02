@@ -392,6 +392,22 @@ canvas {
   border-bottom-left-radius: 4px;
 }
 
+.skills .prog-rails {
+  padding-left: 363px; /* THIS is what slides the bar left */
+}
+
+.skills .prog-apple {
+  padding-left: 480px; /* THIS is what slides the bar left */
+}
+
+.skills .prog-86 {
+  padding-left: 325px; /* THIS is what slides the bar left */
+}
+
+.skills .prog-video {
+  padding-left: 412px; /* THIS is what slides the bar left */
+}
+
 .skill-category {
   max-width: 80%;
   margin: 0 auto;
