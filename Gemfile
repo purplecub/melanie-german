@@ -42,7 +42,10 @@ source 'https://rails-assets.org' do
 end
 
 # Use typed.js for typing effect in header
-gem "typedjs-rails", '1.0.4'
+gem 'typedjs-rails', '1.0.4'
+
+# Use Node.js to try to fix javascript issue
+gem 'nodejs-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
