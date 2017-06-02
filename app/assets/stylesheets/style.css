@@ -326,10 +326,10 @@ canvas {
   margin-right: 15px;
 }
 
-.skills {
+/* .skills {
   background: url("../images/skill-bg.jpg");
   background-size: cover;
-}
+} */
 
 .skill-container {
   position: relative;
@@ -372,6 +372,18 @@ canvas {
 .progressbar-area {
   margin-left: 50px;
   margin-top: 30px;
+}
+
+.skills-left {
+  background-color: #27525B;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.skills-right {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .skills .progress-bar {
@@ -624,6 +636,10 @@ canvas {
 /* .experience {
     background: url("../images/experience-bg.jpg"); 
 } */
+
+#experience {
+  position: relative;
+}
 
 .experience-header {
   margin-bottom: 20px;
