@@ -91,6 +91,7 @@ header a .logo {
   display: inline-block;
   color: black;
   font-weight: 600;
+  padding-left: 20px;
 }
 
 header nav {
