@@ -5,14 +5,14 @@
         <h6>I Am Melanie German</h6>
         <!-- <script src="typed.js"></script> -->
 <script>
-	document.addEventListener("DOMContentLoaded", function(){
-		Typed.new(".element", {
-			strings: ["1", "Second sentence."],
+	$(function(){
+		$(".element").typed({
+			strings: ["First sentence.", "Second sentence."],
 			typeSpeed: 0
 		});
 	});
 </script>
-...
+
 
 <span class="element"></span>
         <div class="element"></div>
@@ -136,7 +136,7 @@
                             <h6>GRIFFIN MEMORIAL</h6>
                             <p class="range">2005-2010</p>
                             <p>Melanie assisted with billing and clerical duties in the Reimbursement department for 
-                            more than 5 years. She also helped train new work-study employees.</a></p>
+                            more than 5 years. She also helped train new work-study employees.</p>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                     </div>
                     <div class="col-md-offset-2 col-md-8">
                         <div class="col-md-12">
-                            <div class="contact-form"><form class="contact-form-area">
+                            <div class="contact-form contact-form-area">
                                 <%= form_for @contact do |f| %>
                                         <div class="col-md-6">
                                             <!-- <input type="text" placeholder="Name" id="name"> -->
@@ -269,7 +269,6 @@
                                             <%= f.submit "SUBMIT", class: "submit-btn btn-style2 clearfix", id: "contact-submit" %>
                                         </div>
                                         <% end %>
-                                    </form>
                                     <div class="result"></div>
                                  
                             </div>
