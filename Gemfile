@@ -24,7 +24,7 @@ gem 'coffee-rails', '4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -35,6 +35,17 @@ gem 'figaro'
 
 # Use FontAwesome for icons
 gem 'font-awesome-sass', '4.5.0'
+
+# Use particles.js for particle header
+source 'https://rails-assets.org' do
+  gem 'rails-assets-particles.js'
+end
+
+# Use typed.js for typing effect in header
+gem 'typedjs-rails', '1.0.4'
+
+# Use Node.js to try to fix javascript issue
+gem 'nodejs-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

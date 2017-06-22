@@ -2,57 +2,71 @@
 <html>
 <head>
   <title>Melanie German</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
   
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to root_path, class: 'navbar-brand' do %>
-        <img src="/images/m-logo.jpg" class="m-logo">
-        Melanie German
-      <% end %>
-      
-    </div>
-	    
-    <div class="collapse navbar-collapse" id="main-nav-collapse">
-      <div class="nav navbar-nav navbar-right">
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Experience", resume_path %></li>
-        <li><%= link_to "Contact", new_contact_path %></li>
-        <li><%= link_to "https://www.linkedin.com/in/melaniegerman" do %>
-          <i class="fa fa-linkedin-square fa-lg"></i>
-        <% end %></li>
-        <li><%= link_to "https://github.com/purplecub" do %>
-          <i class="fa fa-github-square fa-lg"></i>
-        <% end %></li>
-        <!--Stack overflow goes here.-->
-        <li><%= link_to "https://twitter.com/melgrmn" do %>
-          <i class="fa fa-twitter-square fa-lg"></i>
-        <% end %></li>
-      </ul>
-    </div>
+<!-- Start Preloader -->
+  <!-- <div class="preloader">
+      <div class="preloader-img"></div>
+  </div> -->
+<!-- End Preloader -->
+
+<!-- Start scroll-top button -->
+  <div id="scroll-top-area">
+      <a href="#slider-portion"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
   </div>
-</nav>
+<!-- End scroll-top button -->
+
+<!--Start Header-->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#welcome-area" class="logo">
+                    <img src="images/logo-rezumate.png" alt="logo">
+                    <p class='header-name'>MELANIE GERMAN</p>
+                </a>
+            </div>
+            <div class="col-md-9">
+                <nav class="menu single-page-nav" id="menu">
+                    <ul>
+                        <li><a class="home" href="#welcome-area">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience" class="experience-navbar">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--End Header-->
 
 <% flash.each do |key, value| %>
   <%= content_tag :div, value, class: "alert alert-#{key}" %>
 <% end %>  
 
-<div class="container">
+<div class="container" id="container">
   <%= yield %>
 </div>
 
+<!--Start Footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright">
+                    <p>Copyright © 2017 Melanie German | All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--End Footer-->
 </body>
 </html>
