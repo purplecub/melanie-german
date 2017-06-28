@@ -1,20 +1,4 @@
 class PagesController < ApplicationController
-    def contact
-        @contact = Contact.new(params[:contact])
-        @contact.request = request
-        if @contact.save
-            name = params[:contact][:name]
-            email = params[:contact][:email]
-            body = params[:contact][:message]
-            ContactMailer.contact_email(name, email, body).deliver
-            
-            flash.now[:success] = 'Message sent.'
-            redirect_to root_path # Go back to the index page
-        else
-            flash.now[:error] = 'Cannot send message.'
-            redirect_to root_path # Instead of :new, as we submit from :index
-        end 
-    end
     
     def index
         @contact = Contact.new
