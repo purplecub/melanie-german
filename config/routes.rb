@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :pages do
+    post :contact, on: :collection
+  end
   resources :contacts
   get '/resume' => 'pages#resume'
   get '/about' => 'pages#about'
