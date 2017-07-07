@@ -13,8 +13,7 @@
 //= require particles.min
 //= require jquery
 //= require bootstrap-sprockets
-//= require jquery_ujs
-//= require_tree .
 //= require typed
 //= require custom
+//= require_tree 
 
