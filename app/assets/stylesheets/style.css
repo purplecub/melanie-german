@@ -385,6 +385,7 @@ canvas {
   background-color: #27525B;
   padding-top: 140px;
   padding-bottom: 140px;
+  height: 622px;
 }
 
 .skills-right {
@@ -421,7 +422,7 @@ canvas {
 }
 
 .skills .prog-presentation {
-  padding-left: 325px; /* THIS is what slides the bar left */
+  padding-left: 415px; /* THIS is what slides the bar left */
 }
 
 .skills .prog-video {
